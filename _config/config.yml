@@ -1,0 +1,15 @@
+---
+Name: fromholdio-sherlock-pages
+---
+Page:
+  search_engine_classes:
+    - Fromholdio\SherlockPages\Model\PageSearchEngine
+  extensions:
+    - Fromholdio\Sherlock\Extensions\SearchRecordExtension
+    - Fromholdio\SherlockPages\Extensions\SherlockPageExtension
+SilverStripe\SiteConfig\SiteConfig:
+  extensions:
+    - Fromholdio\SherlockPages\Extensions\SherlockSiteConfigExtension
+SilverStripe\CMS\Controllers\ContentController:
+  extensions:
+    - Fromholdio\SherlockPages\Extensions\SherlockContentControllerExtension
